@@ -27,7 +27,75 @@ public class TestMain {
             System.out.println("-ea option enabled good to go");
         }
         TestMain tester = new TestMain();
+        tester.testOffer();
+        tester.testPoll();
+        tester.testPeek();
+        tester.testSize();
+        tester.testIsEmpty();
+        tester.testClear();
+        tester.testToArray();
         System.out.println("all tests passed");
+    }
+
+    private void testOffer() {
+        //offer on empty queue
+
+        //offer on normal queue
+
+        //offer on one less than full
+
+        //offer on full
+    }
+
+    private void testPoll() {
+        //poll on empty queue
+
+        //poll on one more than empty
+
+        //poll on normal queue
+
+        //poll on one less than full
+
+        //poll on full
+
+    }
+
+    private void testPeek() {
+        //peek on empty
+
+        //peek on one more than empty
+
+        //peek on normal queue
+
+        //peek on one less than full
+
+        //peek on full
+    }
+
+    private void testSize() {
+
+    }
+
+    private void testIsEmpty() {
+        //when full
+
+        //when empty
+    }
+
+    private void testClear() {
+        //clear on empty
+
+        //clear on normal
+
+        //clear on full
+    }
+
+    private void testToArray() {
+        //on empty
+
+        //on normal
+
+        //on full
     }
 
     /**
