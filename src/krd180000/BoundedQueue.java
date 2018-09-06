@@ -81,7 +81,7 @@ public class BoundedQueue<T> {
     }
 
     /**
-     * clear the queue
+     * clears the queue
      */
     public void clear(){
         size=0;
@@ -92,6 +92,7 @@ public class BoundedQueue<T> {
     /**
      * fill user supplied array with the elements of the queue, in queue order
      * @param a array to be filled
+     * @throws IllegalArgumentException if passed array is smaller than queue size
      */
     public void toArray(T[] a){
         if(a.length<size){
