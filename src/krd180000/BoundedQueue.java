@@ -3,6 +3,7 @@ package krd180000;
 /**
  * Implemention of the bounded-sized queue Data structure using arrays.
  * @param <T> type of elements in the queue
+ * @author Kautil & Anirudh
  */
 public class BoundedQueue<T> {
     private Object[] data;
@@ -36,7 +37,7 @@ public class BoundedQueue<T> {
             return false;
         size++;
         data[tail] = x;
-        tail = (tail+1)%capacity;
+        tail = (tail+1)%capacity; // % ensures the tail points to 0 when tail+1 == size is reached
         return true;
     }
 
@@ -49,7 +50,7 @@ public class BoundedQueue<T> {
         if(size==0)
             return null;
         T returnVal = cast(data[head]);
-        head = (head+1)%capacity;
+        head = (head+1)%capacity; // % ensures the head points to 0 when head+1 == size is reached
         size--;
         return returnVal;
     }
